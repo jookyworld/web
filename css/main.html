@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS / Selector Practice</title>  
+    <link type="text/css" rel="stylesheet" href="external.css"> <!--외부 css 파일 사용-->
+    <style>
+    p{color: blue; font-size: 12px;}    /* <style> 태그 */
+
+    /* 셀렉트 */
+    h3, li {color: purple;}             /* 태그 이름 */
+    div > div > strong {color: forestgreen;} /* 자식 */
+    ul strong {color: green;}           /* 자손 */
+    *{background: moccasin;}            /* 전체 */
+    .warning {color: red;}              /* class */
+    body.main {background: aliceblue;}  /* class */
+    #list {background: gray;}           /* id */
+    #list span { color: orange;}        /* id, 자손 */
+    h3:first-letter {color: red;}       /* 가상 클래스 */
+    li:hover {background: yellowgreen;} /* 가상 클래스 */
+    </style>
+</head>
+<body>
+    <h3>CSS / 셀렉터 예제</h3>
+    <hr>
+    <p>Hello World</p>      
+    <p style="font-size:25px">중첩된 style</p>  <!-- style 속성 -->
+    <div>
+        <div><strong>frontend</strong> study</div>
+        <ul id="list">
+            <li><span>HTML5</span></li>
+            <li><strong>CSS</strong></li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <div class="warning">backend는 더 어렵다</div>
+    </div>
+</body>
+</html>
