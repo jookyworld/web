@@ -5,19 +5,52 @@
     <title>chap4</title>
 
     <style>
-        p{color:red; font-size: 15px;}
+        div{
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        strong{text-decoration: overline;}
+        .p1{text-indent: 3em; text-align: justify;}
+        .p2{text-indent: 3em; text-align: center;}
+
+        body{
+            font-family: "Times new Riman", serif;
+            font-size: large;
+        }
     </style>
-    <link type="text/css" rel="stylesheet" href="mystyle.css">
+
+
 </head>
 <body>
-<h3>웹 페이지</h3>
+
+<h3>CSS 색 활용</h3>
 <hr>
-<p>1. HTML</p>
-<p>2. CSS </p>
-<p style="color:blue;">3. javaspript</p>
-<p style="color:green; font-size: 20px;"> Front end </p>
+<div style="background-color: deepskyblue">line 1</div>
+<div style="background-color: brown">line 2</div>
+<div style="background-color: fuchsia">line 3</div>
+<div style="background-color: rgb(81, 49, 11)">line 4</div>
+<div style="background-color: #008B8B">line 5</div>
+<br>
+
+<h3 style="text-align: center">텍스트 스타일</h3>
+<hr>
+<p class="p1">들여쓰기와 양쪽 정렬 적용한 텍스트</p>
+<p class="p2">들여쓰기와 중앙 정렬 적용한 텍스트</p>
+<p><span style="text-decoration: line-through">여러가지 </span><strong>줄을 </strong>적용한 텍스트</p>
+<a href="https://www.naver.com" style="text-decoration:line-through">밑줄 없앤 링크</a>
+<br>
+
+<h3 style="font : italic bold 40px sans-serif">폰트</h3>
+<hr>
+<p style="font-weight:900">font-weight:900</p>
+<p style="font-weight:100">font-weight:100</p>
+<p style="font-style:italic">font-style:italic</p>
+<p>현재 크기의 <span style="font-size:1.5em">1.5배 크기</span></p>
+
 
 
 </body>
-
 </html>
