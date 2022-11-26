@@ -1,0 +1,28 @@
+<!-- 익명 함수 이벤트 리스너 작성 -->
+
+<!DOCTYPE html>
+<html>
+<head><title>익명 함수 리스너 작성</title>
+    <meta charset="utf-8">
+<script>
+
+var p;
+function init() {
+    p = document.getElementById("p");
+    p.onmouseover = function () {
+        this.style.backgroundColor = "orchid";
+    };
+    p.onmouseout = function () {
+        this.style.backgroundColor = "white";
+    };
+}
+
+</script>
+</head>
+<body onload="inti()">
+<p>익명 함수 리스너 작성</p>
+<hr>
+
+<p id="p">마우스 올리면</p>
+
+</body> </html>

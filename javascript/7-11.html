@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+<meta charset="utf-8">
+<script>
+    
+function Student(name, score) {
+    this.univ = "한국대학"; 
+    this.date = new Date();
+    this.name = name; 
+    this.score = score; 
+    this.getGrade = function () { 
+        if(this.score > 80) 
+            return "A"; 
+        else if(this.score > 60) 
+            return "B"; 
+        else 
+            return "F";
+    }   
+}
+
+</script>
+</head>
+<body>
+<h3>Student 프로토타임 만들기</h3>
+<hr>
+
+<script>
+
+var jooky = new Student("주권영", 75); 
+document.write(jooky.univ + ", " + jooky.name + "의 학점은 " + jooky.getGrade() + 
+"날짜는 "+ jooky.date.toDateString()+ "<br>");
+
+</script>
+
+</body>
+</html>
+
